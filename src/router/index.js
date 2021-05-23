@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Profile from '../views/Profile.vue'
+import Explore from "../views/Explore.vue"
+import Bookmarks from "../views/Bookmarks.vue";
 
 Vue.use(VueRouter)
 
@@ -16,14 +19,19 @@ const routes = [
     component: Home
   },
   {
+    path: '/profile',
+    name: 'profile',
+    component: Profile
+  },
+  {
     path: '/explore',
     name: 'explore',
-    component: Home
+    component: Explore
   },
   {
     path: '/bookmarks',
     name: 'bookmarks',
-    component: Home
+    component: Bookmarks
   },
   {
     path: '/about',

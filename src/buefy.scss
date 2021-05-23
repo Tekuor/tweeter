@@ -8,10 +8,16 @@ $primary-dark: findDarkColor($primary);
 $primary-invert: findColorInvert($primary);
 $twitter: #4099FF;
 $twitter-invert: findColorInvert($twitter);
+$gray: #4F4F4F;
 
 // Lists and maps
 $custom-colors: null !default;
 $custom-shades: null !default;
+
+$hero-body-padding-medium: 7rem 4.5rem;
+$button-ghost-color: $gray;
+$button-ghost-hover-color: none;
+$button-ghost-hover-decoration: none;
 
 // Setup $colors to use as bulma classes (e.g. 'is-twitter')
 $colors: mergeColorMaps(

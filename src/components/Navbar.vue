@@ -20,11 +20,20 @@
         </template>
 
         <template #end>
-            <b-navbar-item tag="div" class="pr-6">
-                <div>
-                    <span class="image-div mr-2">He</span>
-                    <span class="name-text">Xanthe Neal</span>
-                </div>
+            <b-navbar-item tag="div">
+                    <b-dropdown :triggers="['hover']" aria-role="list" style="width: 234.37px;">
+                        <template #trigger>
+                            <span class="image-div mr-2">He</span>
+                            <span class="name-text">Xanthe Neal</span>
+                            <span><vue-fontawesome :icon="['fas', 'caret-down']" class="ml-2" /></span>
+                        </template>
+
+                        <b-dropdown-item @click="goToProfile()" class="list-items ml-2 mt-2" aria-role="listitem"><vue-fontawesome :icon="['fas', 'user-circle']" class="mr-2" />My Profile</b-dropdown-item>
+                        <b-dropdown-item class="list-items ml-2" aria-role="listitem"><vue-fontawesome :icon="['fas', 'user-friends']" class="mr-2" />Group Chat</b-dropdown-item>
+                        <b-dropdown-item class="list-items ml-2" aria-role="listitem"><vue-fontawesome :icon="['fas', 'cog']" class="mr-2" />Settings</b-dropdown-item>
+                         <hr class="dropdown-divider mx-2">
+                         <b-dropdown-item style="color: #EB5757;" class="list-items ml-2" aria-role="listitem"><vue-fontawesome :icon="['fas', 'sign-out-alt']" class="mr-2" />Logout</b-dropdown-item>
+                    </b-dropdown>
             </b-navbar-item>
         </template>
     </b-navbar>
@@ -34,8 +43,12 @@
 export default {
     computed: {
         currentRoute(){
-            console.log("hi", this.$route.name)
             return this.$route.name
+        }
+    },
+    methods:{
+        goToProfile(){
+            this.$router.push('/profile')
         }
     }
 }
@@ -66,5 +79,10 @@ export default {
 .active {
   color: #2F80ED;
   border-bottom: 3px solid #2F80ED;
+}
+
+.list-items:hover {
+  background: #F2F2F2;
+  border-radius: 8px;
 }
 </style>
