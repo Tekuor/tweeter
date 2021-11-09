@@ -1,30 +1,29 @@
 <template>
   <div id="app">
     <Navbar />
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
 <script>
 import Navbar from "./components/Navbar";
 export default {
-  components:{
-    Navbar
-  }
-}
+  components: {
+    Navbar,
+  },
+};
 </script>
 
 <style>
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 #app {
-  height:100%;
-  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-;
 }
 
 #nav {
