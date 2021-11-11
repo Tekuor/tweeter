@@ -6,7 +6,7 @@
         'background-image': 'url(' + require('../assets/beach.jpeg') + ')',
       }"
     ></div>
-    <div class="flex flex-col items-center -mt-6 md:-mt-12 h-full">
+    <div class="flex flex-col items-center -mt-6 md:-mt-12 h-full px-4 md:px-0">
       <div class="md:w-3/4 w-full h-full">
         <div class="panelPosition px-4">
           <div class="flex md:flex-row items-center flex-col">
