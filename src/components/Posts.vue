@@ -31,28 +31,56 @@
         </div>
       </div>
 
-      <div class="buttons-group columns md:pl-6 h-full">
-        <span class="column is-3"
-          ><div class="tweet-buttons pt-2 is-clickable">
-            <vue-fontawesome :icon="['far', 'comment-alt']" class="mr-2" />
-            Comments
-          </div></span
-        >
-        <span class="column is-3"
-          ><div class="tweet-buttons pt-2 is-clickable">
-            <vue-fontawesome :icon="['fas', 'retweet']" class="mr-2" /> Retweets
-          </div></span
-        >
-        <span class="column is-3"
-          ><div class="tweet-buttons pt-2 is-clickable">
-            <vue-fontawesome :icon="['far', 'heart']" class="mr-2" /> Likes
-          </div></span
-        >
-        <span class="column is-3"
-          ><div class="tweet-buttons pt-2 is-clickable">
-            <vue-fontawesome :icon="['far', 'bookmark']" class="mr-2" /> Saved
-          </div></span
-        >
+      <div
+        class="buttons-group flex flex-row justify-between md:pl-6 h-full"
+        v-if="!isSmallScreen"
+      >
+        <div class="tweet-buttons pt-2 is-clickable flex flex-row">
+          <vue-fontawesome
+            :icon="['far', 'comment-alt']"
+            class="md:mr-2 mt-1"
+          />
+          <p>Comments</p>
+        </div>
+
+        <div class="tweet-buttons pt-2 is-clickable flex flex-row">
+          <vue-fontawesome :icon="['fas', 'retweet']" class="md:mr-2 mt-1" />
+          <p>Retweets</p>
+        </div>
+
+        <div class="tweet-buttons pt-2 is-clickable flex flex-row">
+          <vue-fontawesome :icon="['far', 'heart']" class="md:mr-2 mt-1" />
+          <p>Likes</p>
+        </div>
+
+        <div class="tweet-buttons pt-2 is-clickable flex flex-row">
+          <vue-fontawesome :icon="['far', 'bookmark']" class="md:mr-2 mt-1" />
+          <p>Saved</p>
+        </div>
+      </div>
+
+      <div
+        class="buttons-group flex flex-row justify-between md:pl-6 h-full"
+        v-else
+      >
+        <div class="tweet-buttons pt-2 is-clickable">
+          <vue-fontawesome
+            :icon="['far', 'comment-alt']"
+            class="md:mr-2 mt-1"
+          />
+        </div>
+
+        <div class="tweet-buttons pt-2 is-clickable">
+          <vue-fontawesome :icon="['fas', 'retweet']" class="md:mr-2 mt-1" />
+        </div>
+
+        <div class="tweet-buttons pt-2 is-clickable">
+          <vue-fontawesome :icon="['far', 'heart']" class="md:mr-2 mt-1" />
+        </div>
+
+        <div class="tweet-buttons pt-2 is-clickable">
+          <vue-fontawesome :icon="['far', 'bookmark']" class="md:mr-2 mt-1" />
+        </div>
       </div>
 
       <div class="columns">
@@ -101,28 +129,62 @@
         </div>
       </div>
 
-      <div class="buttons-group columns md:pl-6 h-full">
-        <span class="column is-3"
-          ><div class="tweet-buttons pt-2 is-clickable">
-            <vue-fontawesome :icon="['far', 'comment-alt']" class="mr-2" />
-            Comments
-          </div></span
+      <div
+        class="buttons-group flex flex-row justify-between md:pl-6 h-full"
+        v-if="!isSmallScreen"
+      >
+        <div class="tweet-buttons pt-2 is-clickable flex flex-row">
+          <vue-fontawesome
+            :icon="['far', 'comment-alt']"
+            class="md:mr-2 mt-1"
+          />
+          Comments
+        </div>
+        <div
+          class="tweet-buttons pt-2 is-clickable flex flex-row"
+          style="color: #27AE60"
         >
-        <span class="column is-3"
-          ><div class="tweet-buttons pt-2 is-clickable" style="color: #27AE60">
-            <vue-fontawesome :icon="['fas', 'retweet']" class="mr-2" /> Retweets
-          </div></span
+          <vue-fontawesome :icon="['fas', 'retweet']" class="md:mr-2 mt-1" />
+          Retweets
+        </div>
+        <div
+          class="tweet-buttons pt-2 is-clickable flex flex-row"
+          style="color: #EB5757"
         >
-        <span class="column is-3"
-          ><div class="tweet-buttons pt-2 is-clickable" style="color: #EB5757">
-            <vue-fontawesome :icon="['far', 'heart']" class="mr-2" /> Likes
-          </div></span
+          <vue-fontawesome :icon="['far', 'heart']" class="md:mr-2 mt-1" />
+          Likes
+        </div>
+        <div
+          class="tweet-buttons pt-2 is-clickable flex flex-row"
+          style="color: #2D9CDB"
         >
-        <span class="column is-3"
-          ><div class="tweet-buttons pt-2 is-clickable" style="color: #2D9CDB">
-            <vue-fontawesome :icon="['far', 'bookmark']" class="mr-2" /> Saved
-          </div></span
-        >
+          <vue-fontawesome :icon="['far', 'bookmark']" class="md:mr-2 mt-1" />
+          Saved
+        </div>
+      </div>
+
+      <div
+        class="buttons-group flex flex-row justify-between md:pl-6 h-full"
+        v-else
+      >
+        <div class="tweet-buttons pt-2 is-clickable">
+          <vue-fontawesome
+            :icon="['far', 'comment-alt']"
+            class="md:mr-2 mt-1"
+          />
+        </div>
+
+        <div class="tweet-buttons pt-2 is-clickable" style="color: #27AE60">
+          <vue-fontawesome :icon="['fas', 'retweet']" class="md:mr-2 mt-1" />
+        </div>
+
+        <div class="tweet-buttons pt-2 is-clickable" style="color: #EB5757">
+          <vue-fontawesome :icon="['far', 'heart']" class="md:mr-2 mt-1" />
+        </div>
+
+        <div class="tweet-buttons pt-2 is-clickable" style="color: #2D9CDB">
+          <vue-fontawesome :icon="['far', 'bookmark']" class="md:mr-2 mt-1" />
+        </div>
       </div>
 
       <div class="columns reply">
@@ -226,28 +288,62 @@
         </div>
       </div>
 
-      <div class="buttons-group columns md:pl-6 h-full">
-        <span class="column is-3"
-          ><div class="tweet-buttons pt-2 is-clickable">
-            <vue-fontawesome :icon="['far', 'comment-alt']" class="mr-2" />
-            Comments
-          </div></span
+      <div
+        class="buttons-group flex flex-row justify-between md:pl-6 h-full"
+        v-if="!isSmallScreen"
+      >
+        <div class="tweet-buttons pt-2 is-clickable flex flex-row">
+          <vue-fontawesome
+            :icon="['far', 'comment-alt']"
+            class="md:mr-2 mt-1"
+          />
+          Comments
+        </div>
+        <div
+          class="tweet-buttons pt-2 is-clickable flex flex-row"
+          style="color: #27AE60"
         >
-        <span class="column is-3"
-          ><div class="tweet-buttons pt-2 is-clickable" style="color: #27AE60">
-            <vue-fontawesome :icon="['fas', 'retweet']" class="mr-2" /> Retweets
-          </div></span
+          <vue-fontawesome :icon="['fas', 'retweet']" class="md:mr-2 mt-1" />
+          Retweets
+        </div>
+        <div
+          class="tweet-buttons pt-2 is-clickable flex flex-row"
+          style="color: #EB5757"
         >
-        <span class="column is-3"
-          ><div class="tweet-buttons pt-2 is-clickable" style="color: #EB5757">
-            <vue-fontawesome :icon="['far', 'heart']" class="mr-2" /> Likes
-          </div></span
+          <vue-fontawesome :icon="['far', 'heart']" class="md:mr-2 mt-1" />
+          Likes
+        </div>
+        <div
+          class="tweet-buttons pt-2 is-clickable flex flex-row"
+          style="color: #2D9CDB"
         >
-        <span class="column is-3"
-          ><div class="tweet-buttons pt-2 is-clickable" style="color: #2D9CDB">
-            <vue-fontawesome :icon="['far', 'bookmark']" class="mr-2" /> Saved
-          </div></span
-        >
+          <vue-fontawesome :icon="['far', 'bookmark']" class="md:mr-2 mt-1" />
+          Saved
+        </div>
+      </div>
+
+      <div
+        class="buttons-group flex flex-row justify-between md:pl-6 h-full"
+        v-else
+      >
+        <div class="tweet-buttons pt-2 is-clickable">
+          <vue-fontawesome
+            :icon="['far', 'comment-alt']"
+            class="md:mr-2 mt-1"
+          />
+        </div>
+
+        <div class="tweet-buttons pt-2 is-clickable" style="color: #27AE60">
+          <vue-fontawesome :icon="['fas', 'retweet']" class="md:mr-2 mt-1" />
+        </div>
+
+        <div class="tweet-buttons pt-2 is-clickable" style="color: #EB5757">
+          <vue-fontawesome :icon="['far', 'heart']" class="md:mr-2 mt-1" />
+        </div>
+
+        <div class="tweet-buttons pt-2 is-clickable" style="color: #2D9CDB">
+          <vue-fontawesome :icon="['far', 'bookmark']" class="md:mr-2 mt-1" />
+        </div>
       </div>
 
       <div class="columns">
@@ -278,6 +374,25 @@ export default {
       default: true,
     },
   },
+  data() {
+    return {
+      screenWidth: "",
+    };
+  },
+  created() {
+    window.addEventListener("resize", this.myEventHandler);
+    this.screenWidth = window.innerWidth;
+  },
+  methods: {
+    myEventHandler() {
+      this.screenWidth = window.innerWidth;
+    },
+  },
+  computed: {
+    isSmallScreen() {
+      return this.screenWidth <= 600 ? true : false;
+    },
+  },
 };
 </script>
 
@@ -291,8 +406,6 @@ export default {
 }
 
 .post-div {
-  /* width: 745px; */
-  /* min-height: 500px; */
   background: #ffffff;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
   border-radius: 8px;

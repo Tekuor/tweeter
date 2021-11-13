@@ -1,85 +1,89 @@
 <template>
-  <div class="flex flex-col items-center md:px-8 px-4 mt-8 w-full">
-    <div class="flex flex-row justify-center flex-wrap">
-      <div class="flex flex-col md:w-8/12">
-        <div class="tweet-box" style="padding: 20px">
-          <div class="tweet-heading">Tweet Something</div>
-          <div class="columns pt-2">
-            <div class="column is-1">
-              <div class="tweet-image"></div>
-            </div>
-            <div class="column is-11">
-              <div class="tweet-message pt-2">What's happening?</div>
-              <div style="color: #2F80ED;font-size: 12px;padding-top:30px">
-                <span
-                  ><vue-fontawesome :icon="['far', 'image']" class="mr-2"
-                /></span>
-                <span
-                  ><vue-fontawesome :icon="['fas', 'globe-africa']" class="mr-2"
-                /></span>
-                <span>
-                  <b-dropdown
-                    :triggers="['hover']"
-                    aria-role="list"
-                    style="width: 234.37px;"
-                  >
-                    <template #trigger>
-                      <a>Everyone can reply</a>
-                    </template>
+  <div class="flex flex-col items-center mt-8 w-full px-4 md:px-0">
+    <div class="md:w-3/4 w-full">
+      <div class="flex flex-row justify-center flex-wrap">
+        <div class="flex flex-col md:w-8/12">
+          <div class="tweet-box" style="padding: 20px">
+            <div class="tweet-heading">Tweet Something</div>
+            <div class="columns pt-2">
+              <div class="column is-1">
+                <div class="tweet-image"></div>
+              </div>
+              <div class="column is-11">
+                <div class="tweet-message pt-2">What's happening?</div>
+                <div style="color: #2F80ED;font-size: 12px;padding-top:30px">
+                  <span
+                    ><vue-fontawesome :icon="['far', 'image']" class="mr-2"
+                  /></span>
+                  <span
+                    ><vue-fontawesome
+                      :icon="['fas', 'globe-africa']"
+                      class="mr-2"
+                  /></span>
+                  <span>
+                    <b-dropdown
+                      :triggers="['hover']"
+                      aria-role="list"
+                      style="width: 234.37px;"
+                    >
+                      <template #trigger>
+                        <a>Everyone can reply</a>
+                      </template>
 
-                    <div class="dropDownHeading px-2">Who can reply?</div>
-                    <div class="dropDownDescription px-2">
-                      Choose who can reply to this Tweet.
-                    </div>
-                    <b-dropdown-item
-                      class="list-items ml-2 mt-2"
-                      aria-role="listitem"
-                      ><vue-fontawesome
-                        :icon="['fas', 'globe-africa']"
-                        class="mr-2"
-                      />Everyone</b-dropdown-item
-                    >
-                    <b-dropdown-item
-                      class="list-items ml-2"
-                      aria-role="listitem"
-                      ><vue-fontawesome
-                        :icon="['fas', 'user-friends']"
-                        class="mr-2"
-                      />People you follow</b-dropdown-item
-                    >
-                  </b-dropdown>
-                </span>
-                <span class="is-pulled-right"
-                  ><div class="tweet-button pt-2">Tweet</div></span
-                >
+                      <div class="dropDownHeading px-2">Who can reply?</div>
+                      <div class="dropDownDescription px-2">
+                        Choose who can reply to this Tweet.
+                      </div>
+                      <b-dropdown-item
+                        class="list-items ml-2 mt-2"
+                        aria-role="listitem"
+                        ><vue-fontawesome
+                          :icon="['fas', 'globe-africa']"
+                          class="mr-2"
+                        />Everyone</b-dropdown-item
+                      >
+                      <b-dropdown-item
+                        class="list-items ml-2"
+                        aria-role="listitem"
+                        ><vue-fontawesome
+                          :icon="['fas', 'user-friends']"
+                          class="mr-2"
+                        />People you follow</b-dropdown-item
+                      >
+                    </b-dropdown>
+                  </span>
+                  <span class="is-pulled-right"
+                    ><div class="tweet-button pt-2">Tweet</div></span
+                  >
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="w-full">
-          <Post />
-        </div>
-      </div>
-
-      <div class="flex flex-col md:w-3/12 md:pl-8">
-        <div class="menu" style="padding: 20px">
-          <div class="tweet-heading">Trends for you</div>
-          <div style="padding-top:20px">
-            <Trend trend="#programming" tweets="213k Tweets" />
-            <Trend class="pt-4" trend="#devchallenges" tweets="123k Tweets" />
-            <Trend class="pt-4" trend="#frontend" tweets="34k Tweets" />
-            <Trend class="pt-4" trend="#helsinki" tweets="11k Tweets" />
-            <Trend class="pt-4" trend="#100DaysOfCode" tweets="5k Tweets" />
-            <Trend class="pt-4" trend="#learntocode" tweets="1k Tweets" />
+          <div class="w-full">
+            <Post />
           </div>
         </div>
 
-        <div class="follow mt-4" style="padding: 20px">
-          <div class="tweet-heading">Who to follow</div>
-          <Follower class="py-4" />
-          <div class="follow-div"></div>
+        <div class="flex flex-col md:w-3/12 md:pl-8">
+          <div class="menu" style="padding: 20px">
+            <div class="tweet-heading">Trends for you</div>
+            <div style="padding-top:20px">
+              <Trend trend="#programming" tweets="213k Tweets" />
+              <Trend class="pt-4" trend="#devchallenges" tweets="123k Tweets" />
+              <Trend class="pt-4" trend="#frontend" tweets="34k Tweets" />
+              <Trend class="pt-4" trend="#helsinki" tweets="11k Tweets" />
+              <Trend class="pt-4" trend="#100DaysOfCode" tweets="5k Tweets" />
+              <Trend class="pt-4" trend="#learntocode" tweets="1k Tweets" />
+            </div>
+          </div>
 
-          <Follower class="pt-4" />
+          <div class="follow mt-4" style="padding: 20px">
+            <div class="tweet-heading">Who to follow</div>
+            <Follower class="py-4" />
+            <div class="follow-div"></div>
+
+            <Follower class="pt-4" />
+          </div>
         </div>
       </div>
     </div>

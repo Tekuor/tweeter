@@ -1,41 +1,49 @@
 <template>
-  <div>
-  <div class="container-div">
-    <div class="columns">
-        <div class="column is-3" style="padding-right: 90px;margin-top:30px">
-        <div class="menu">
-          <ul class="list-text">
-            <li :class="{'activeMenu': activeMenu === 'tweets'}" class="mb-4">Tweets</li>
-            <li :class="{'activeMenu': activeMenu === 'replies'}" class="pb-4">Tweets & Replies</li>
-            <li :class="{'activeMenu': activeMenu === 'media'}" class="pb-4">Media</li>
-            <li :class="{'activeMenu': activeMenu === 'likes'}">Likes</li>
-          </ul>
+  <div class="flex flex-col items-center mt-8 w-full px-4 md:px-0">
+    <div class="md:w-3/4 w-full">
+      <div class="flex flex-row justify-center flex-wrap w-full">
+        <div class="md:w-3/12 w-full md:mb-0 mb-8">
+          <div class="menu">
+            <ul class="list-text">
+              <li :class="{ activeMenu: activeMenu === 'tweets' }" class="mb-4">
+                Tweets
+              </li>
+              <li
+                :class="{ activeMenu: activeMenu === 'replies' }"
+                class="pb-4"
+              >
+                Tweets & Replies
+              </li>
+              <li :class="{ activeMenu: activeMenu === 'media' }" class="pb-4">
+                Media
+              </li>
+              <li :class="{ activeMenu: activeMenu === 'likes' }">Likes</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="md:pl-8 md:w-9/12">
+          <Post :showRetweet="false" />
         </div>
       </div>
-
-      <div class="column is-8">
-        <Post  :showRetweet="false"/>
-      </div>
     </div>
-  </div>
   </div>
 </template>
 
 <script>
 import Post from "./Posts.vue";
 export default {
-  name: 'HomeComponent',
-  props: {
+  name: "HomeComponent",
+  props: {},
+  components: {
+    Post,
   },
-  components:{
-    Post
+  data() {
+    return {
+      activeMenu: "tweets",
+    };
   },
-  data(){
-    return{
-      activeMenu:"tweets"
-    }
-  }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -51,10 +59,8 @@ li {
 }
 
 .menu {
-  width: 240px;
-  height: 179.01px;
-  margin-top: -30px;
-  background: #FFFFFF;
+  min-height: 179.01px;
+  background: #ffffff;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
 }
@@ -67,12 +73,12 @@ li {
 }
 
 .activeMenu {
-  color: #2F80ED;
-  border-left: 3px solid #2F80ED;
+  color: #2f80ed;
+  border-left: 3px solid #2f80ed;
 }
 
 li:hover {
-  color: #2F80ED;
+  color: #2f80ed;
 }
 
 .tweet-image {
@@ -80,36 +86,36 @@ li:hover {
   height: 40px;
   left: 532px;
   top: 553.9px;
-  background: #C4C4C4;
+  background: #c4c4c4;
   border-radius: 8px;
 }
 
 .search-button {
-    width: 81px;
-    height: 32px;
-    background: #2F80ED;
-    border-radius: 4px;
-    text-align: center;
-    color: #FFFFFF;
-    font-weight: 500;
-    font-size: 12px;
+  width: 81px;
+  height: 32px;
+  background: #2f80ed;
+  border-radius: 4px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 12px;
 }
 
 .tweet-message {
-    font-weight: 500;
-    font-size: 16px;
-    color: #BDBDBD;
+  font-weight: 500;
+  font-size: 16px;
+  color: #bdbdbd;
 }
 
 .tweet-heading {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    color: #4F4F4F;
-    border: 1px solid #E0E0E0;
-    border-left: 0;
-    border-right: 0;
-    border-top: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  color: #4f4f4f;
+  border: 1px solid #e0e0e0;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
 }
 
 ul {
@@ -122,99 +128,99 @@ li {
   cursor: pointer;
 }
 
-.container-div{
+.container-div {
   margin-top: 30px;
-  padding:0 8rem; 
+  padding: 0 8rem;
 }
 
 .search-box {
-    width: 745px;
-    height: 54px;
-    background: #FFFFFF;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
-    border-radius: 8px;
+  width: 745px;
+  height: 54px;
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
 }
 
-.profile-image{
+.profile-image {
   border-radius: 8px;
   width: 125px;
   height: 125px;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   position: relative;
   top: -60px;
   z-index: 3;
 }
 
-.profile-name{
+.profile-name {
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   color: #333333;
 }
 
-.numbers{
+.numbers {
   font-weight: 600;
   font-size: 12px;
   color: #333333;
 }
 
-.description{
+.description {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   color: #828282;
 }
 
-.button{
+.button {
   width: 101px;
   height: 32px;
-  background: #2F80ED;
+  background: #2f80ed;
   border-radius: 4px;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .follow {
   width: 240px;
   height: 517.7px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
 }
 
 .dropDownHeading {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    color: #4F4F4F;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  color: #4f4f4f;
 }
 
 .dropDownDescription {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    color: #828282;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: #828282;
 }
 
 .list-items:hover {
-    width: 209.94px;
-    height: 39.15px;
-    background: #F2F2F2;
-    border-radius: 8px;
+  width: 209.94px;
+  height: 39.15px;
+  background: #f2f2f2;
+  border-radius: 8px;
 }
 
 .follow-div {
-    border: 1px solid #E0E0E0;
-    border-left: 0;
-    border-right: 0;
-    border-top: 0;
+  border: 1px solid #e0e0e0;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
 }
 
 @media screen and (max-width: 360px) {
-  .container-div{
-    padding:0 2rem; 
+  .container-div {
+    padding: 0 2rem;
   }
 
   .panelPosition {
@@ -224,7 +230,7 @@ li {
     min-height: 163px;
   }
 
-  .profile-image{
+  .profile-image {
     border-radius: 8px;
     width: 100px;
     height: 100px;
