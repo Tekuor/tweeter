@@ -5,16 +5,16 @@
       Retweeted
     </div>
     <div class="post-div w-full p-8 mb-4">
-      <div class="columns">
-        <div class="column is-1">
+      <div class="flex flex-row">
+        <div class="mr-2">
           <div class="tweet-image"></div>
         </div>
-        <div class="column is-3">
+        <div>
           <div class="tweet-name">Peyton Lyons</div>
           <div class="tweet-date">24 August at 20:43</div>
         </div>
       </div>
-      <div class="tweet">
+      <div class="tweet py-4">
         Traveling – it leaves you speechless, then turns you into a storyteller.
       </div>
       <div>
@@ -83,12 +83,12 @@
         </div>
       </div>
 
-      <div class="columns">
-        <div class="column is-1">
+      <div class="flex flex-row">
+        <div class="mr-2">
           <div class="tweet-image"></div>
         </div>
 
-        <div class="column is-11">
+        <div class="w-full">
           <b-field>
             <b-input
               placeholder="Tweet your reply"
@@ -102,16 +102,16 @@
     </div>
 
     <div class="post-div w-full p-8 mb-4">
-      <div class="columns">
-        <div class="column is-1">
+      <div class="flex flex-row">
+        <div class="mr-2">
           <div class="tweet-image"></div>
         </div>
-        <div class="column is-3">
+        <div>
           <div class="tweet-name">Mikael Stanley</div>
           <div class="tweet-date">24 August at 20:43</div>
         </div>
       </div>
-      <div class="tweet">
+      <div class="tweet py-4">
         “We travel, some of us forever, to seek other places, other lives, other
         souls.” – Anais Nin
       </div>
@@ -187,12 +187,12 @@
         </div>
       </div>
 
-      <div class="columns reply">
-        <div class="column is-1">
+      <div class="flex flex-row reply">
+        <div class="mr-2">
           <div class="tweet-image"></div>
         </div>
 
-        <div class="column is-11">
+        <div class="w-full">
           <b-field>
             <b-input
               placeholder="Tweet your reply"
@@ -204,12 +204,12 @@
         </div>
       </div>
 
-      <div class="columns replies">
-        <div class="column is-1">
+      <div class="flex flex-row replies py-4">
+        <div class="mr-2">
           <div class="tweet-image"></div>
         </div>
 
-        <div class="column is-11">
+        <div class="w-full">
           <div class="reply-box">
             <div style="padding: 10px">
               <span class="tweet-name pr-2" style="font-size: 14px;"
@@ -233,12 +233,12 @@
         </div>
       </div>
 
-      <div class="columns replies">
-        <div class="column is-1">
+      <div class="flex flex-row replies py-4">
+        <div class="mr-2">
           <div class="tweet-image"></div>
         </div>
 
-        <div class="column is-11">
+        <div class="w-full">
           <div class="reply-box">
             <div style="padding: 10px">
               <span class="tweet-name pr-2" style="font-size: 14px;"
@@ -267,16 +267,16 @@
     </div>
 
     <div class="post-div w-full p-8 mb-4">
-      <div class="columns">
-        <div class="column is-1">
+      <div class="flex flex-row">
+        <div class="mr-2">
           <div class="tweet-image"></div>
         </div>
-        <div class="column is-3">
+        <div>
           <div class="tweet-name">Mikael Stanley</div>
           <div class="tweet-date">24 August at 20:43</div>
         </div>
       </div>
-      <div class="tweet">
+      <div class="tweet py-4">
         “The gladdest moment in human life, methinks, is a departure into
         unknown lands.” – Sir Richard Burton
       </div>
@@ -346,12 +346,12 @@
         </div>
       </div>
 
-      <div class="columns">
-        <div class="column is-1">
+      <div class="flex flex-row">
+        <div class="mr-2">
           <div class="tweet-image"></div>
         </div>
 
-        <div class="column is-11">
+        <div class="w-full">
           <b-field>
             <b-input
               placeholder="Tweet your reply"
@@ -447,15 +447,6 @@ export default {
   font-size: 16px;
   line-height: 22px;
   color: #4f4f4f;
-}
-
-.tweet-image-div {
-  width: 705px;
-  min-height: 328.22px;
-  left: 532px;
-  top: 655.9px;
-  background-image: url("https://images.unsplash.com/photo-1508672019048-805c876b67e2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dHJhdmVsfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
-  border-radius: 8px;
 }
 
 .numbers-text {
