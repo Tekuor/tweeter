@@ -17,7 +17,7 @@
             <div
               class="flex flex-col md:ml-4 w-full md:w-6/12 mt-8 pb-10 text-center md:text-left"
             >
-              <div class="flex md:flex-row flex-col">
+              <div class="flex md:flex-row flex-col items-center">
                 <div class="font-bold mr-4">Daniel Jensen</div>
                 <div class="flex flex-row">
                   <div
