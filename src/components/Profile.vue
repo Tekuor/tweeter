@@ -19,9 +19,16 @@
             >
               <div class="flex md:flex-row flex-col">
                 <div class="font-bold mr-4">Daniel Jensen</div>
-                <div>
-                  <span class="font-bold">2,569</span> Following
-                  <span class="font-bold">10.8K</span> Followers
+                <div class="flex flex-row">
+                  <div
+                    class="mr-2 is-clickable"
+                    @click="isComponentModalActive = true"
+                  >
+                    <span class="font-bold">2,569</span> Following
+                  </div>
+                  <div class="is-clickable">
+                    <span class="font-bold">10.8K</span> Followers
+                  </div>
                 </div>
               </div>
               <div class="mt-4">
@@ -64,6 +71,120 @@
         </div>
       </div>
     </div>
+
+    <b-modal v-model="isComponentModalActive" :width="640">
+      <template>
+        <div class="following-div p-4 w-full">
+          <div class="flex flex-row">
+            <div class="font-bold text-sm">Daniel Jensen is following</div>
+          </div>
+
+          <div class="w-full follower mt-2 pt-2">
+            <div class="flex flex-row w-full">
+              <div>
+                <div class="tweet-image"></div>
+              </div>
+              <div class="flex flex-col ml-4 w-1/2">
+                <div class="font-bold text-sm">Austin Neill</div>
+                <div class="text-xs mt-1">120k followers</div>
+              </div>
+              <div class="text-xs w-1/2 is-clickable">
+                <div class="p-1 tweet-button float-right">
+                  Following
+                </div>
+              </div>
+            </div>
+            <p class="mt-4 text-xs font-light">Follow me on IG: @arstyy</p>
+          </div>
+
+          <div class="w-full follower mt-2 pt-2">
+            <div class="flex flex-row w-full">
+              <div>
+                <div class="tweet-image"></div>
+              </div>
+              <div class="flex flex-col ml-4 w-1/2">
+                <div class="font-bold text-sm">Jonathan Gallegos</div>
+                <div class="text-xs mt-1">120k followers</div>
+              </div>
+              <div class="text-xs w-1/2 is-clickable">
+                <div class="p-1 tweet-button float-right">
+                  <b-icon
+                    pack="fas"
+                    icon="user-plus"
+                    size="is-small"
+                    type="is-light"
+                    class="mr-1"
+                  ></b-icon>
+                  Follow
+                </div>
+              </div>
+            </div>
+            <p class="mt-4 text-xs font-light">
+              @jjonthan on Instagram **Over a decade as a lifestyle, adventure,
+              and studio photographer. Traveling with my wife @travelfoodlove on
+              instagram. PLEASE LINK ALL PHOTOS TO jonathangallegos.com -- not
+              required but much appreciated!
+            </p>
+          </div>
+
+          <div class="w-full follower mt-2 pt-2">
+            <div class="flex flex-row w-full">
+              <div>
+                <div class="tweet-image"></div>
+              </div>
+              <div class="flex flex-col ml-4 w-1/2">
+                <div class="font-bold text-sm">Clarisse Meyer</div>
+                <div class="text-xs mt-1">120k followers</div>
+              </div>
+              <div class="text-xs w-1/2 is-clickable">
+                <div class="p-1 tweet-button float-right">
+                  <b-icon
+                    pack="fas"
+                    icon="user-plus"
+                    size="is-small"
+                    type="is-light"
+                    class="mr-1"
+                  ></b-icon>
+                  Follow
+                </div>
+              </div>
+            </div>
+            <p class="mt-4 text-xs font-light">
+              Photo | Video | Design - Southern California & Beyond Instagram:
+              @clarissemeyer
+            </p>
+          </div>
+
+          <div class="w-full follower mt-2 pt-2">
+            <div class="flex flex-row w-full">
+              <div>
+                <div class="tweet-image"></div>
+              </div>
+              <div class="flex flex-col ml-4 w-1/2">
+                <div class="font-bold text-sm">Oliur</div>
+                <div class="text-xs mt-1">120k followers</div>
+              </div>
+              <div class="text-xs w-1/2 is-clickable">
+                <div class="p-1 tweet-button float-right">
+                  <b-icon
+                    pack="fas"
+                    icon="user-plus"
+                    size="is-small"
+                    type="is-light"
+                    class="mr-1"
+                  ></b-icon>
+                  Follow
+                </div>
+              </div>
+            </div>
+            <p class="mt-4 text-xs font-light">
+              I'm a designer and entrepreneur who enjoys taking pictures in my
+              free time.
+            </p>
+          </div>
+        </div>
+      </template>
+    </b-modal>
   </div>
 </template>
 
@@ -78,6 +199,7 @@ export default {
   data() {
     return {
       activeMenu: "tweets",
+      isComponentModalActive: false,
     };
   },
 };
@@ -179,32 +301,34 @@ li:hover {
 
 .tweet-button {
   width: 81px;
-  height: 32px;
-  left: 827.21px;
-  top: 205.58px;
+  min-height: 23px;
   background: #2f80ed;
   border-radius: 4px;
   text-align: center;
   color: #ffffff;
 }
 
-@media screen and (max-width: 360px) {
-  .container-div {
-    padding: 0 2rem;
-  }
+.following-div {
+  width: auto;
+  min-height: 400px;
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
 
-  .panelPosition {
-    position: relative;
-    top: -30px;
-    width: 300px;
-    min-height: 163px;
-  }
+.tweet-image {
+  width: 40px;
+  height: 40px;
+  left: 532px;
+  top: 553.9px;
+  background: #c4c4c4;
+  border-radius: 8px;
+}
 
-  .profile-image {
-    border-radius: 8px;
-    width: 100px;
-    height: 100px;
-    top: -40px;
-  }
+.follower {
+  border: 1px solid #f2f2f2;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
 }
 </style>
