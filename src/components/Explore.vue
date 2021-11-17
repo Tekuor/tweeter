@@ -32,7 +32,7 @@
                   class="mr-2"
                 />
               </div>
-              <div class="column is-11">
+              <div class="column is-11 is-clickable">
                 <span style="color: #BDBDBD;font-size: 16px;">Search</span>
                 <span class="search-button pt-2 is-pulled-right">Search</span>
               </div>
