@@ -467,6 +467,7 @@ export default {
 .tweet-buttons:hover {
   background: #f2f2f2;
   border-radius: 8px;
+  padding: 10px;
 }
 
 .tweet-buttons {
