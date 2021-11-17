@@ -38,8 +38,15 @@
             <div class="w-6/12 md:-mt-16 pb-4 md:pb-0">
               <div
                 style="margin: 0 auto"
-                class="tweet-button pt-1 md:float-right"
+                class="tweet-button md:float-right text-xs pt-1 is-clickable"
               >
+                <b-icon
+                  pack="fas"
+                  icon="user-plus"
+                  size="is-small"
+                  type="is-light"
+                  class="mr-1"
+                ></b-icon>
                 Follow
               </div>
             </div>
@@ -300,8 +307,8 @@ li:hover {
 }
 
 .tweet-button {
-  width: 81px;
-  min-height: 23px;
+  width: 86px;
+  min-height: 27px;
   background: #2f80ed;
   border-radius: 4px;
   text-align: center;
