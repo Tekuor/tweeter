@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="w-full">
     <div class="columns">
       <div class="column is-1">
         <div class="tweet-image"></div>
@@ -33,7 +33,7 @@
     </div>
 
     <div
-      class="tweet-image-div mt-2"
+      class="tweet-image-div mt-2 w-full"
       v-bind:style="{
         'background-image':
           'url(https://images.unsplash.com/photo-1508672019048-805c876b67e2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dHJhdmVsfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60)',
@@ -87,7 +87,6 @@ export default {};
 }
 
 .tweet-image-div {
-  max-width: 204px;
   min-height: 77.22px;
   border-radius: 8px;
 }

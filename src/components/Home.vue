@@ -2,27 +2,33 @@
   <div class="flex flex-col items-center mt-8 w-full px-4 md:px-0">
     <div class="md:w-3/4 w-full">
       <div class="flex flex-row justify-center flex-wrap">
-        <div class="flex flex-col md:w-8/12">
+        <div class="flex flex-col lg:w-8/12">
           <div class="tweet-box" style="padding: 20px">
             <div class="tweet-heading">Tweet Something</div>
-            <div class="columns pt-2">
-              <div class="column is-1">
+            <div class="flex flex-row pt-2">
+              <div class="mr-2">
                 <div class="tweet-image"></div>
               </div>
-              <div class="column is-11">
+              <div>
                 <div class="tweet-message pt-2">What's happening?</div>
-                <div style="color: #2F80ED;font-size: 12px;padding-top:30px">
-                  <span
-                    ><vue-fontawesome :icon="['far', 'image']" class="mr-2"
-                  /></span>
-                  <span
-                    ><vue-fontawesome
+              </div>
+            </div>
+
+            <div class="flex flex-row flex-wrap w-full pt-8">
+              <div class="reply pt-3 md:pl-6 w-1/2">
+                <div class="flex flex-row">
+                  <div>
+                    <vue-fontawesome :icon="['far', 'image']" class="mr-2" />
+                  </div>
+                  <div>
+                    <vue-fontawesome
                       :icon="['fas', 'globe-africa']"
                       class="mr-2"
-                  /></span>
-                  <span>
+                    />
+                  </div>
+                  <div>
                     <b-dropdown
-                      :triggers="['hover']"
+                      :triggers="['hover', 'click']"
                       aria-role="list"
                       style="width: 234.37px;"
                     >
@@ -51,11 +57,11 @@
                         />People you follow</b-dropdown-item
                       >
                     </b-dropdown>
-                  </span>
-                  <span class="is-pulled-right"
-                    ><div class="tweet-button pt-2">Tweet</div></span
-                  >
+                  </div>
                 </div>
+              </div>
+              <div class="w-1/2 is-clickable">
+                <div class="tweet-button float-right text-xs pt-2">Tweet</div>
               </div>
             </div>
           </div>
@@ -64,7 +70,7 @@
           </div>
         </div>
 
-        <div class="flex flex-col md:w-3/12 md:pl-8">
+        <div class="flex flex-col w-full lg:w-4/12 lg:pl-8">
           <div class="menu" style="padding: 20px">
             <div class="tweet-heading">Trends for you</div>
             <div style="padding-top:20px">
@@ -113,7 +119,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .tweet-image {
-  max-width: 40px;
+  width: 40px;
   min-height: 40px;
   left: 532px;
   top: 553.9px;
@@ -216,7 +222,6 @@ li {
 }
 
 .follow {
-  min-height: 517.7px;
   background: #ffffff;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
@@ -248,5 +253,10 @@ li {
   border-left: 0;
   border-right: 0;
   border-top: 0;
+}
+
+.reply {
+  color: #2f80ed;
+  font-size: 12px;
 }
 </style>

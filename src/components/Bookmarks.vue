@@ -1,8 +1,8 @@
 <template>
   <div class="flex flex-col items-center mt-8 w-full px-4 md:px-0">
-    <div class="md:w-3/4 w-full">
+    <div class="lg:w-3/4 w-full">
       <div class="flex flex-row justify-center flex-wrap w-full">
-        <div class="md:w-3/12 w-full md:mb-0 mb-8">
+        <div class="lg:w-3/12 w-full lg:mb-0 mb-8">
           <div class="menu">
             <ul class="list-text">
               <li :class="{ activeMenu: activeMenu === 'tweets' }" class="mb-4">
@@ -22,7 +22,7 @@
           </div>
         </div>
 
-        <div class="md:pl-8 md:w-9/12">
+        <div class="lg:pl-8 lg:w-9/12">
           <Post :showRetweet="false" />
         </div>
       </div>

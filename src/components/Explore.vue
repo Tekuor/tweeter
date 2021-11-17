@@ -1,8 +1,8 @@
 <template>
-  <div class="flex flex-col items-center mt-8 w-full px-4 md:px-0">
-    <div class="md:w-3/4 w-full">
+  <div class="flex flex-col items-center mt-8 w-full px-4 lg:px-0">
+    <div class="lg:w-3/4 w-full">
       <div class="flex flex-row justify-center flex-wrap w-full">
-        <div class="md:w-3/12 w-full md:mb-0 mb-8">
+        <div class="lg:w-3/12 w-full lg:mb-0 mb-8">
           <div class="menu">
             <ul class="list-text">
               <li :class="{ activeMenu: activeMenu === 'tweets' }" class="mb-4">
@@ -22,8 +22,8 @@
           </div>
         </div>
 
-        <div class="md:w-8/12">
-          <div class="search-box md:ml-8" style="padding: 20px">
+        <div class="lg:w-8/12">
+          <div class="search-box lg:ml-8" style="padding: 20px">
             <div class="columns ">
               <div class="column is-1">
                 <vue-fontawesome
@@ -39,8 +39,7 @@
             </div>
           </div>
 
-          <!-- <Post class="pt-4" :showRetweet="false" /> -->
-          <div class="mt-8 md:pl-8" style="min-width: 77%;">
+          <div class="mt-8 lg:pl-8" style="min-width: 77%;">
             <Post :showRetweet="false" />
           </div>
         </div>
