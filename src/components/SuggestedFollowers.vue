@@ -89,5 +89,7 @@ export default {};
 .tweet-image-div {
   min-height: 77.22px;
   border-radius: 8px;
+  background-position: center;
+  background-size: cover;
 }
 </style>
