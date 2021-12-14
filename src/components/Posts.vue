@@ -107,7 +107,7 @@
           <div class="tweet-image"></div>
         </div>
         <div>
-          <div class="tweet-name">Ama Stanley</div>
+          <div class="tweet-name">Kofi Yeboah</div>
           <div class="tweet-date">24 August at 20:43</div>
         </div>
       </div>
