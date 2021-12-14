@@ -18,7 +18,9 @@
               class="flex flex-col md:ml-4 w-full md:w-6/12 mt-8 pb-10 text-center md:text-left"
             >
               <div class="flex md:flex-row flex-col items-center">
-                <div class="font-bold mr-4">Matekuor Mate-Kole</div>
+                <div class="font-bold mr-4 w-2/3">
+                  Matekuor Mate-Kole
+                </div>
                 <div class="flex flex-row">
                   <div
                     class="mr-2 is-clickable"
@@ -32,7 +34,8 @@
                 </div>
               </div>
               <div class="mt-4">
-                Photographer & Filmmaker based in Copenhagen, Denmark ✵ 🇩🇰
+                Fullstack developer & baker based in Accra, Ghana
+                <span>&#127468; &#127469;</span>
               </div>
             </div>
             <div class="w-6/12 md:-mt-16 pb-4 md:pb-0">

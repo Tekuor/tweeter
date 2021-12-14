@@ -1,8 +1,8 @@
 <template>
   <div class="w-full">
     <div class="retweet-text" v-if="showRetweet">
-      <vue-fontawesome :icon="['fas', 'retweet']" class="mr-2" /> Daniel Jensen
-      Retweeted
+      <vue-fontawesome :icon="['fas', 'retweet']" class="mr-2" /> Matekuor
+      Mate-Kole Retweeted
     </div>
     <div class="post-div w-full p-8 mb-4">
       <div class="flex flex-row">
