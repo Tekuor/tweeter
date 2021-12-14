@@ -213,7 +213,7 @@
           <div class="reply-box">
             <div style="padding: 10px">
               <span class="tweet-name pr-2" style="font-size: 14px;"
-                >Adwoa Gyamfi</span
+                >Adwoa Sika</span
               >
               <span class="tweet-date">24 August at 20:43 </span>
             </div>
