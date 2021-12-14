@@ -7,7 +7,7 @@
     <div class="post-div w-full p-8 mb-4">
       <div class="flex flex-row">
         <div class="mr-2">
-          <div class="tweet-image"></div>
+          <div><img class="tweet-image" src="../assets/image1.jpg" /></div>
         </div>
         <div>
           <div class="tweet-name">Peyton Lyons</div>
@@ -85,7 +85,7 @@
 
       <div class="flex flex-row">
         <div class="mr-2">
-          <div class="tweet-image"></div>
+          <div><img class="tweet-image" src="../assets/image1.jpg" /></div>
         </div>
 
         <div class="w-full">
@@ -104,7 +104,7 @@
     <div class="post-div w-full p-8 mb-4">
       <div class="flex flex-row">
         <div class="mr-2">
-          <div class="tweet-image"></div>
+          <div><img class="tweet-image" src="../assets/image3.jpg" /></div>
         </div>
         <div>
           <div class="tweet-name">Kofi Yeboah</div>
@@ -189,7 +189,7 @@
 
       <div class="flex flex-row reply">
         <div class="mr-2">
-          <div class="tweet-image"></div>
+          <div><img class="tweet-image" src="../assets/image3.jpg" /></div>
         </div>
 
         <div class="w-full">
@@ -206,7 +206,7 @@
 
       <div class="flex flex-row replies py-4">
         <div class="mr-2">
-          <div class="tweet-image"></div>
+          <div><img class="tweet-image" src="../assets/image2.jpg" /></div>
         </div>
 
         <div class="w-full">
@@ -235,7 +235,7 @@
 
       <div class="flex flex-row replies py-4">
         <div class="mr-2">
-          <div class="tweet-image"></div>
+          <div><img class="tweet-image" src="../assets/image5.jpg" /></div>
         </div>
 
         <div class="w-full">
@@ -269,7 +269,7 @@
     <div class="post-div w-full p-8 mb-4">
       <div class="flex flex-row">
         <div class="mr-2">
-          <div class="tweet-image"></div>
+          <div><img class="tweet-image" src="../assets/image6.jpg" /></div>
         </div>
         <div>
           <div class="tweet-name">Abena Stanley</div>
@@ -348,7 +348,7 @@
 
       <div class="flex flex-row">
         <div class="mr-2">
-          <div class="tweet-image"></div>
+          <div><img class="tweet-image" src="../assets/image6.jpg" /></div>
         </div>
 
         <div class="w-full">
@@ -415,7 +415,7 @@ export default {
   height: 40px;
   left: 532px;
   top: 553.9px;
-  background: #c4c4c4;
+  /* background: #c4c4c4; */
   border-radius: 8px;
 }
 

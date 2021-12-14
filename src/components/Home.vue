@@ -7,7 +7,7 @@
             <div class="tweet-heading">Tweet Something</div>
             <div class="flex flex-row pt-2">
               <div class="mr-2">
-                <div class="tweet-image"></div>
+                <div><img class="tweet-image" src="../assets/dog1.jpg" /></div>
               </div>
               <div>
                 <div class="tweet-message pt-2">What's happening?</div>

@@ -12,7 +12,7 @@
           <div class="flex md:flex-row items-center flex-col">
             <div class="w-auto">
               <div class="-mt-16 md:-mt-24">
-                <img class="profile-image" src="../assets/choc.jpg" />
+                <img class="profile-image" src="../assets/dog1.jpg" />
               </div>
             </div>
 
