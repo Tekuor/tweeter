@@ -40,8 +40,8 @@
           style="width: 234.37px;"
         >
           <template #trigger>
-            <span class="image-div mr-2">He</span>
-            <span class="name-text">Xanthe Neal</span>
+            <span class="image-div mr-2">MM</span>
+            <span class="name-text">Matekuor Mate-Kole</span>
             <span
               ><vue-fontawesome :icon="['fas', 'caret-down']" class="ml-2"
             /></span>
