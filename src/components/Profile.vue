@@ -34,7 +34,7 @@
                 </div>
               </div>
               <div class="mt-4">
-                Fullstack developer & baker based in Accra, Ghana ✵ 🇬🇭
+                Fullstack developer & baker based in Accra, Ghana 🇬🇭
               </div>
             </div>
             <div class="w-6/12 md:-mt-16 pb-4 md:pb-0">
