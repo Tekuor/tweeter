@@ -18,7 +18,7 @@
               class="flex flex-col md:ml-4 w-full md:w-6/12 mt-8 pb-10 text-center md:text-left"
             >
               <div class="flex md:flex-row flex-col items-center">
-                <div class="font-bold mr-4">Daniel Jensen</div>
+                <div class="font-bold mr-4">Matekuor Mate-Kole</div>
                 <div class="flex flex-row">
                   <div
                     class="mr-2 is-clickable"
@@ -83,7 +83,7 @@
       <template>
         <div class="following-div p-4 w-full">
           <div class="flex flex-row">
-            <div class="font-bold text-sm">Daniel Jensen is following</div>
+            <div class="font-bold text-sm">Matekuor Mate-Kole is following</div>
           </div>
 
           <div class="w-full follower mt-2 pt-2">
@@ -92,7 +92,7 @@
                 <div class="tweet-image"></div>
               </div>
               <div class="flex flex-col ml-4 w-1/2">
-                <div class="font-bold text-sm">Austin Neill</div>
+                <div class="font-bold text-sm">Theodora</div>
                 <div class="text-xs mt-1">120k followers</div>
               </div>
               <div class="text-xs w-1/2 is-clickable">
@@ -101,7 +101,7 @@
                 </div>
               </div>
             </div>
-            <p class="mt-4 text-xs font-light">Follow me on IG: @arstyy</p>
+            <p class="mt-4 text-xs font-light">Follow me on IG: @theody</p>
           </div>
 
           <div class="w-full follower mt-2 pt-2">
@@ -110,7 +110,7 @@
                 <div class="tweet-image"></div>
               </div>
               <div class="flex flex-col ml-4 w-1/2">
-                <div class="font-bold text-sm">Jonathan Gallegos</div>
+                <div class="font-bold text-sm">Harriet Mate-Kole</div>
                 <div class="text-xs mt-1">120k followers</div>
               </div>
               <div class="text-xs w-1/2 is-clickable">
@@ -127,10 +127,10 @@
               </div>
             </div>
             <p class="mt-4 text-xs font-light">
-              @jjonthan on Instagram **Over a decade as a lifestyle, adventure,
-              and studio photographer. Traveling with my wife @travelfoodlove on
-              instagram. PLEASE LINK ALL PHOTOS TO jonathangallegos.com -- not
-              required but much appreciated!
+              @hmm on Instagram **Over a decade as a lifestyle, adventure, and
+              studio photographer. Traveling with my wife @travelfoodlove on
+              instagram. PLEASE LINK ALL PHOTOS TO hmm.com -- not required but
+              much appreciated!
             </p>
           </div>
 
