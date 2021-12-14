@@ -11,7 +11,9 @@
         <div class="panelPosition px-4">
           <div class="flex md:flex-row items-center flex-col">
             <div class="w-auto">
-              <div class="profile-image -mt-16 md:-mt-24"></div>
+              <div class="-mt-16 md:-mt-24">
+                <img class="profile-image" src="../assets/choc.jpg" />
+              </div>
             </div>
 
             <div
@@ -249,7 +251,6 @@ li {
   border-radius: 8px;
   width: 125px;
   min-height: 125px;
-  background-color: #c4c4c4;
 }
 
 .profile-name {
