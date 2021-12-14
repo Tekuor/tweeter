@@ -107,7 +107,7 @@
           <div class="tweet-image"></div>
         </div>
         <div>
-          <div class="tweet-name">Mikael Stanley</div>
+          <div class="tweet-name">Ama Stanley</div>
           <div class="tweet-date">24 August at 20:43</div>
         </div>
       </div>
@@ -213,7 +213,7 @@
           <div class="reply-box">
             <div style="padding: 10px">
               <span class="tweet-name pr-2" style="font-size: 14px;"
-                >Waqar Bloom</span
+                >Adwoa Gyamfi</span
               >
               <span class="tweet-date">24 August at 20:43 </span>
             </div>
@@ -242,7 +242,7 @@
           <div class="reply-box">
             <div style="padding: 10px">
               <span class="tweet-name pr-2" style="font-size: 14px;"
-                >Bianca Sosa</span
+                >Ama Mensah</span
               >
               <span class="tweet-date">24 August at 20:43 </span>
             </div>
@@ -272,7 +272,7 @@
           <div class="tweet-image"></div>
         </div>
         <div>
-          <div class="tweet-name">Mikael Stanley</div>
+          <div class="tweet-name">Abena Stanley</div>
           <div class="tweet-date">24 August at 20:43</div>
         </div>
       </div>
