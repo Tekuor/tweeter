@@ -40,11 +40,15 @@
           style="width: 234.37px;"
         >
           <template #trigger>
-            <span class="image-div mr-2">MM</span>
-            <span class="name-text">Matekuor Mate-Kole</span>
-            <span
-              ><vue-fontawesome :icon="['fas', 'caret-down']" class="ml-2"
-            /></span>
+            <div class="flex flex-row">
+              <div class=" mr-2">
+                <img class="image-div" src="../assets/dog1.jpg" />
+              </div>
+              <div class="name-text mt-2">Matekuor Mate-Kole</div>
+              <div class="mt-1">
+                <vue-fontawesome :icon="['fas', 'caret-down']" class="ml-2" />
+              </div>
+            </div>
           </template>
 
           <b-dropdown-item
@@ -107,7 +111,6 @@ export default {
 .image-div {
   width: 32px;
   height: 32px;
-  background: #c4c4c4;
   border-radius: 8px;
 }
 
